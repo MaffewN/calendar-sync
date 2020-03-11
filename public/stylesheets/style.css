@@ -1,0 +1,11 @@
+pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+.btn-auth { margin: 13rem 0; }
+.btn-auth, .btn-new-event { text-align: center; }
+.btn-outlook { background-color: #006FC4; color: #fff; border: 1px solid #006FC4; font-size: 1.5rem; transition: all 450ms; }
+.btn-outlook:hover { background-color: #fff; color: #006FC4; transform: scale(1.15); }
+
+.fa-calendar-alt, .fa-plus-circle { margin: 0 0.4rem 0 0; }

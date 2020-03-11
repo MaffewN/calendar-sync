@@ -1,0 +1,15 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="btn-auth">
+          {{#if user}}
+            <a class="btn btn-outlook btn-large" href="/calendar"><i class="fas fa-calendar-alt"></i>Go back to Outlook calendar</a>
+          {{else}}
+            <a class="btn btn-outlook btn-large" href="{{signInUrl}}"><i class="fas fa-calendar-alt"></i>Login with Outlook</a>
+          {{/if}}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

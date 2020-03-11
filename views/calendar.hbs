@@ -1,0 +1,39 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="btn-new-event">
+          <a class="btn btn-outlook btn-large" href=""><i class="fas fa-plus-circle"></i>Create an event</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<h2>{{user}}'s Calendar</h2>
+<table class="table">
+  <thead class="thead-light">
+    <th scope="col">Subject</th>
+    <th scope="col">Start</th>
+    <th scope="col">End</th>
+    <th scope="col">Attendees</th>
+  </thead>
+  <tbody>
+    {{#each events}}
+      <tr>
+        <td>{{this.subject}}</td>
+        <td>{{this.start.dateTime}} ({{this.start.timeZone}})</td>
+        <td>{{this.end.dateTime}} ({{this.end.timeZone}})</td>
+        <td>
+          <ul class="list-unstyled">
+            {{#each this.attendees}}
+              <li class="border p-1" title="{{this.emailAddress.address}}">
+                {{this.emailAddress.name}}
+              </li>
+            {{/each}}
+          </ul>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
