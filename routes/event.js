@@ -3,7 +3,7 @@ var router = express.Router();
 var authHelper = require('../helpers/auth');
 var graph = require('@microsoft/microsoft-graph-client');
 
-/* GET /mail */
+/* GET /event */
 router.get('/', async function(req, res, next) {
     let parms = { title: 'Event', active: { event: true } };
   
