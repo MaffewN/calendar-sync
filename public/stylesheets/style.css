@@ -11,7 +11,7 @@ pre {
 .btn-dvc:hover { background-color: #fff; color: #343A40; }
 .btn-new-event { text-align: right; }
 
-.fa-calendar-alt, .fa-plus-circle, .fa-home { margin: 0 0.4rem 0 0; }
+.fa-calendar-alt, .fa-plus-circle, .fa-home, .fa-arrow-circle-left { margin: 0 0.4rem 0 0; }
 .error { text-align: center; }
 
 label { font-size: 1.5rem; }
