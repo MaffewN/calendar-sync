@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var authorize = require('./routes/authorize');
 var mail = require('./routes/mail');
 var calendar = require('./routes/calendar');
+var event = require('./routes/event');
 var usersRouter = require('./routes/users');
 
 var app = express();
@@ -27,6 +28,7 @@ app.use('/', indexRouter);
 app.use('/authorize', authorize);
 app.use('/mail', mail);
 app.use('/calendar', calendar);
+app.use('/event', event);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
