@@ -2,7 +2,7 @@
 
 ## Installation ##
 
-    npm install -g express-generator
+    npm install
 
 ## Run ##
 
