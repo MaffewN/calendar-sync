@@ -13,3 +13,6 @@ pre {
 
 .fa-calendar-alt, .fa-plus-circle, .fa-home { margin: 0 0.4rem 0 0; }
 .error { text-align: center; }
+
+label { font-size: 1.5rem; }
+.form-control:focus { border-color: #343A40; box-shadow: 0 0 0 0.2rem rgba(52,58,64,.25);}

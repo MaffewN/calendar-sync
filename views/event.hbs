@@ -2,7 +2,40 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        <h1>OUI</h1>
+        <form>
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" class="form-control" id="title">
+          </div>
+          <div class="form-group">
+            <label for="participants">Participants</label>
+            <input type="search" class="form-control" id="participants">
+          </div>
+          <div class="form-group">
+            <div class="row">
+              <div class="col">
+                <label for="date">Date</label>
+                <input type="date" class="form-control" id="date">
+              </div>
+              <div class="col">
+                <label for="startTime">From</label>
+                <input type="time" class="form-control" id="startTime">
+              </div>
+              <div class="col">
+                <label for="endTime">To</label>
+                <input type="time" class="form-control" id="endTime">
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="location">Location</label>
+            <select class="form-control" id="location">
+              <option selected>Salle 1</option>
+              <option>Salle 2</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-dvc">Submit</button>
+          </form>
       </div>
     </div>
   </div>
