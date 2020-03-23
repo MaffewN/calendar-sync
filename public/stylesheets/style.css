@@ -15,4 +15,4 @@ pre {
 .error { text-align: center; }
 
 label { font-size: 1.5rem; }
-.form-control:focus { border-color: #343A40; box-shadow: 0 0 0 0.2rem rgba(52,58,64,.25);}
+.form-control:focus { border-color: #006FC4; box-shadow: 0 0 0 0.2rem rgba(0,111,196,.25);}
