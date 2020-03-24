@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var authHelper = require('../helpers/auth');
+var authHelper = require('../helpers/outlookAuth');
 
 /* GET home page. */
 router.get('/', async function(req, res, next) {

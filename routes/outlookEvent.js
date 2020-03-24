@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var authHelper = require('../helpers/auth');
+var authHelper = require('../helpers/outlookAuth');
 var graph = require('@microsoft/microsoft-graph-client');
 
 /* GET /event */
