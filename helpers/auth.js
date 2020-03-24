@@ -86,3 +86,8 @@ const credentials = {
     // Nothing in the cookies that helps, return empty
     return null;
   }
+
+  exports.getAccessToken = getAccessToken;
+  exports.clearCookies = clearCookies;
+  exports.getTokenFromCode = getTokenFromCode;
+  exports.getAuthUrl = getAuthUrl; 
