@@ -8,7 +8,7 @@ require('dotenv').config();
 var indexRouter = require('./routes/index');
 var authorize = require('./routes/authorize');
 var mail = require('./routes/mail');
-var calendar = require('./routes/calendar');
+var outlookCalendar = require('./routes/outlookCalendar');
 var event = require('./routes/event');
 var usersRouter = require('./routes/users');
 
@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/authorize', authorize);
 app.use('/mail', mail);
-app.use('/calendar', calendar);
+app.use('/outlook-Calendar', outlookCalendar);
 app.use('/event', event);
 app.use('/users', usersRouter);
 

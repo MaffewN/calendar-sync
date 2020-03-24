@@ -12,7 +12,7 @@ router.get('/', async function(req, res, next) {
       try {
         await authHelper.getTokenFromCode(code, res);
         // Redirect to home
-        res.redirect('/calendar');
+        res.redirect('/outlook-calendar');
       } catch (error) {
         res.render('error', { title: 'Error', message: 'Error exchanging code for token', error: error });
       }
