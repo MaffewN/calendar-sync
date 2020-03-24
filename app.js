@@ -9,7 +9,7 @@ var indexRouter = require('./routes/index');
 var authorize = require('./routes/authorize');
 var mail = require('./routes/mail');
 var outlookCalendar = require('./routes/outlookCalendar');
-var event = require('./routes/event');
+var outlookEvent = require('./routes/outlookEvent');
 var usersRouter = require('./routes/users');
 
 var app = express();
@@ -27,8 +27,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/authorize', authorize);
 app.use('/mail', mail);
-app.use('/outlook-Calendar', outlookCalendar);
-app.use('/event', event);
+app.use('/outlook-calendar', outlookCalendar);
+app.use('/outlook-event', outlookEvent);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
