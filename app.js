@@ -10,6 +10,7 @@ var authorize = require('./routes/authorize');
 var mail = require('./routes/mail');
 var outlookCalendar = require('./routes/outlookCalendar');
 var outlookEvent = require('./routes/outlookEvent');
+var googleCalendar = require('./routes/googleCalendar');
 var usersRouter = require('./routes/users');
 
 var app = express();
@@ -29,6 +30,7 @@ app.use('/authorize', authorize);
 app.use('/mail', mail);
 app.use('/outlook-calendar', outlookCalendar);
 app.use('/outlook-event', outlookEvent);
+app.use('/google-calendar', googleCalendar);
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler
