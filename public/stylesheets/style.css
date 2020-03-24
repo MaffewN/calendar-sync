@@ -5,8 +5,10 @@ pre {
 
 .btn-auth { margin: 13rem 0; }
 .btn-auth, .btn-dvc { text-align: center; }
-.btn-outlook { background-color: #006FC4; color: #fff; border: 1px solid #006FC4; font-size: 1.5rem; transition: all 450ms; }
+.btn-outlook { background-color: #006FC4; color: #fff; border: 1px solid #006FC4; font-size: 1.5rem; transition: all 450ms; margin: 1rem;}
 .btn-outlook:hover { background-color: #fff; color: #006FC4; transform: scale(1.15); }
+.btn-google { background-color: #EA4335; color: #fff; border: 1px solid #EA4335; font-size: 1.5rem; transition: all 450ms; margin: 1rem;}
+.btn-google:hover { background-color: #fff; color: #EA4335; transform: scale(1.15); }
 .btn-dvc { background-color: #343A40; color: #fff; border: 1px solid #343A40; font-size: 1.5rem; transition: all 450ms; }
 .btn-dvc:hover { background-color: #fff; color: #343A40; }
 .btn-new-event { text-align: right; }
