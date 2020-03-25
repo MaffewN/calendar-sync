@@ -1,6 +1,5 @@
 var express = require('express');
 var router = express.Router();
-var authHelper = require('../helpers/googleAuth');
 
 /* GET /authorize. */
 router.get('/', async function(req, res, next) {
@@ -12,7 +11,7 @@ router.get('/', async function(req, res, next) {
       try {
         await authHelper.getTokenFromCode(code, res);
         // Redirect to home
-        res.redirect('/outlook-calendar');
+        res.redirect('/google-calendar');
       } catch (error) {
         res.render('error', { title: 'Error', message: 'Error exchanging code for token', error: error });
       }
@@ -20,14 +19,6 @@ router.get('/', async function(req, res, next) {
       // Otherwise complain
       res.render('error', { title: 'Error', message: 'Authorization error', error: { status: 'Missing code parameter' } });
     }
-  });
-
-  /* GET /authorize/signout */
-router.get('/signout', function(req, res, next) {
-    authHelper.clearCookies(res);
-  
-    // Redirect to home
-    res.redirect('/');
   });
 
 module.exports = router;
