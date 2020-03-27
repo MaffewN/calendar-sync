@@ -17,7 +17,8 @@ router.get('/', async function(req, res, next) {
         // Generate an OAuth URL and redirect there
         var url = oAuth2Client.generateAuthUrl({
             access_type: 'offline',
-            scope: 'https://www.googleapis.com/auth/admin.directory.resource.calendar'
+            scope: ['https://www.googleapis.com/auth/gmail.readonly',
+                    'https://www.googleapis.com/auth/calendar']
         });
         console.log(url)
         res.redirect(url);

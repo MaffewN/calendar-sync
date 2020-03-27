@@ -11,10 +11,10 @@ router.get('/', async function(req, res, next) {
 
   if (accessToken && userName) {
     parms.user = userName;
-    parms.debug = `User: ${userName}\nAccess Token: ${accessToken}`;
+    //parms.debug = `User: ${userName}\nAccess Token: ${accessToken}`;
   } else {
     parms.signInUrl = authHelper.getAuthUrl();
-    parms.debug = parms.signInUrl;
+    //parms.debug = parms.signInUrl;
   }
 
   res.render('index', parms);
