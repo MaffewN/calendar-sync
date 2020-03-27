@@ -37,12 +37,11 @@ router.get('/', async function(req, res, next) {
                 console.log('No labels found.');
             }
         });
-        res.send('Logged in')
+        res.render('google-calendar', parms);
     }
 })
 
 router.get('/auth/google/callback', async function (req, res, next) {
-  //let parms = { title: 'Google Calendar', active: { googleCalendar: true } };
 
     var code = req.query.code
     if (code) {
