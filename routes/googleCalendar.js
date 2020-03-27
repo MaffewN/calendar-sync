@@ -1,7 +1,7 @@
 var { google } = require('googleapis');
 var express = require('express')
 var router = express.Router();
-var OAuth2Data = require('./google_key.json')
+var OAuth2Data = require('../google_key.json')
 
 var CLIENT_ID = OAuth2Data.web.client_id;
 var CLIENT_SECRET = OAuth2Data.web.client_secret;
