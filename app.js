@@ -7,7 +7,6 @@ var logger = require('morgan');
 require('dotenv').config();
 var indexRouter = require('./routes/index');
 var authorize = require('./routes/authorize');
-var googleAuthorize = require('./routes/googleAuthorize');
 var mail = require('./routes/mail');
 var outlookCalendar = require('./routes/outlookCalendar');
 var outlookEvent = require('./routes/outlookEvent');
@@ -28,7 +27,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/authorize', authorize);
-app.use('/google-authorize', googleAuthorize);
 app.use('/mail', mail);
 app.use('/outlook-calendar', outlookCalendar);
 app.use('/outlook-event', outlookEvent);
